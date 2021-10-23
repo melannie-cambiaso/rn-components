@@ -26,10 +26,10 @@ const Item = ({ item }: Props) => {
     <TouchableOpacity
       onPress={() => navigation.navigate(item.component as any)}>
       <View style={styles.container}>
-        <Icon name={item.icon} size={23} />
+        <Icon color="#6638f0" name={item.icon} size={23} />
         <Text style={styles.itemText}>{item.name}</Text>
         <View style={{ flex: 1 }}></View>
-        <Icon name="chevron-forward-outline" size={23} />
+        <Icon color="#6638f0" name="chevron-forward-outline" size={23} />
       </View>
     </TouchableOpacity>
   );
